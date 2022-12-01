@@ -23,9 +23,9 @@ void move(int SL, int SR, int EC)
         cLeft  = encoders.getCountsLeft();
         cRight = encoders.getCountsRight();
         lcd.clear();
-        lcd.print(cLeft);
+        lcd.print(cLeft/10);
         lcd.gotoXY(4, 0);
-        lcd.print(CRight);
+        lcd.print(cRight/10);
     } while(abs(cLeft) < EC && abs(cRight) < EC);
     motors.setSpeeds(0, 0);
 }
