@@ -38,16 +38,9 @@ void move_forward(int Max_Speed, int E_Counter)
 
 void move_turn(int Speed_L, int Speed_R, int E_Counter)
 {
-    int countsLeft, countsRight;
-    delay(500);
-    countsLeft  = encoders.getCountsAndResetLeft();
-    countsRight = encoders.getCountsAndResetRight();
-    motors.setSpeeds(Speed_L, Speed_R);
-    do{
-        countsLeft  = encoders.getCountsLeft();
-        countsRight = encoders.getCountsRight();
-    }while(countsLeft < E_Counter);
-    motors.setSpeeds(0, 0); 
+    /*この部分にプリントのコードを入力しなさい*/
+    
+    
 }
 
 void loop()
