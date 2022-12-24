@@ -1,4 +1,3 @@
-// 本サンプルプログラムは以下のコードを授業用に改編したものである
 // https://github.com/cambrozak/bpl001/tree/master/session-07/pixy_8
 // BPL001 Introduction to Robotics by Carlos Ambrozak is licensed 
 // under a Creative Commons Attribution 4.0 International License.
