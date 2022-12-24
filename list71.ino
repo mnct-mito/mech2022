@@ -35,42 +35,9 @@ void loop()
   static int   motorL = 0, motorR = 0;
   
   if ( var == 0 || var & 0x80 ) {
-    // ボタン系
-    switch ( var & 0x07 ) {
-    case 0:   // 停止
-      motorL = motorR = 0;
-      break;
-    case 1:   // 前進
-      if ( var == varbak ) {
-        if ( motorL < 400 ) {
-          motorL += MOTOR_RUNUP;
-          motorR += MOTOR_RUNUP;
-        }
-      }
-      else {
-        motorL = motorR = MOTOR_RUNUP;
-      }
-      break;
-    case 2:   // 後退
-      if ( var == varbak ) {
-        if ( motorL > -400 ) {
-          motorL -= MOTOR_RUNUP;
-          motorR -= MOTOR_RUNUP;
-        }
-      }
-      else {
-        motorL = motorR = -MOTOR_RUNUP;
-      }
-      break;
-    case 3:   // 左
-      motorL = 0;
-      motorR = TURN_SPEED;
-      break;
-    case 4:   // 右
-      motorL = TURN_SPEED;
-      motorR = 0;
-      break;
-    }
+
+
+
   }
   else {
     // アナログスティック系
